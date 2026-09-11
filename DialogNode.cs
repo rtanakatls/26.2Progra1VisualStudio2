@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Progra1262
 {
-    internal class DialogNode : Node
+    internal class DialogNode : Node, IShowText
     {
         private string text;
 
@@ -17,9 +17,14 @@ namespace Progra1262
 
         public override void Execute()
         {
-            Console.WriteLine(text);
-            Console.WriteLine("Presiona cualquier tecla para continuar...");
+            ShowText(text);
+            ShowText("Presiona cualquier tecla para continuar...");
             Console.ReadKey();
+        }
+
+        public void ShowText(string text)
+        {
+            Console.WriteLine(text);
         }
 
     }

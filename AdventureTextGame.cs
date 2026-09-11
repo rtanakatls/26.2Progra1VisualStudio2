@@ -12,6 +12,12 @@ namespace Progra1262
 
         public void Execute()
         {
+            IShowText showText = new DialogNode("");
+            List<IShowText> showTextList = new List<IShowText>();
+
+            showTextList.Add(showText);
+            showTextList.Add(new DialogNode("hola");
+
             nodes = new List<Node>();
             nodes.Add(new DialogNode("Inicio de clases"));
             nodes.Add(new DialogNode("El curso comienza mal"));

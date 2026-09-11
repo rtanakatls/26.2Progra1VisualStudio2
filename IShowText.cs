@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Progra1262
 {
-    internal abstract class Node
+    internal interface IShowText
     {
 
-        public abstract void Execute();
+        void ShowText(string text);
     }
 }

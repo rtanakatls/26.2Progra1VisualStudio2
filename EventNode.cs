@@ -20,18 +20,18 @@ namespace Progra1262
             base.Execute();
             for(int i=0;i<eventSection.Count;i++)
             {
-                Console.WriteLine($"{i+1}. {eventSection[i].option}");
+                ShowText($"{i+1}. {eventSection[i].option}");
             }
             int choice = int.Parse(Console.ReadLine());
             if (choice > 0 && choice <= eventSection.Count)
             {
-                Console.WriteLine($"{eventSection[choice-1].result}"); 
-                Console.WriteLine("Presiona cualquier tecla para continuar...");
+                ShowText($"{eventSection[choice-1].result}");
+                ShowText("Presiona cualquier tecla para continuar...");
                 Console.ReadKey();
             }
             else
             {
-                Console.WriteLine($"Opción inválida");
+                ShowText($"Opción inválida");
             }
         }
     }
