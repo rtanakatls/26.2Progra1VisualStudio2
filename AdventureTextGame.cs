@@ -16,7 +16,7 @@ namespace Progra1262
             List<IShowText> showTextList = new List<IShowText>();
 
             showTextList.Add(showText);
-            showTextList.Add(new DialogNode("hola");
+            showTextList.Add(new DialogNode("hola"));
 
             nodes = new List<Node>();
             nodes.Add(new DialogNode("Inicio de clases"));
