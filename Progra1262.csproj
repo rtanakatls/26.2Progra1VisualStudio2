@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdventureTextGame.cs" />
+    <Compile Include="CombatNode.cs" />
     <Compile Include="DialogNode.cs" />
     <Compile Include="EventNode.cs" />
     <Compile Include="EventSection.cs" />
+    <Compile Include="IShowText.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
